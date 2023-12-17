@@ -11,8 +11,8 @@ android {
         applicationId = "moye.sinetoolbox.xtc"
         minSdk = 19
         targetSdk = 25
-        versionCode = 37
-        versionName = "XTC3.6"
+        versionCode = 38
+        versionName = "XTC3.7"
         resConfigs("zh")
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
