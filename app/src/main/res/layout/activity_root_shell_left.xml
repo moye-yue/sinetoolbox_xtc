@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".Activity.root.RootShellActivity">
+
+    <moye.sinetoolbox.xtc.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" >
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="-8dp"
+                    android:src="@drawable/item_decorate"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:text="@string/root_shell_title"
+                    android:layout_marginTop="5dp"
+                    style="@style/PageTitle" />
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/shell_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:hint="在此处输入需要的命令\n\n"
+                android:textColor="@color/font_title"
+                android:padding="5dp"
+                android:textColorHint="@color/font_describe"
+                android:gravity="top"
+                android:textSize="12dp"
+                android:background="@color/list_bg" />
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:layout_marginHorizontal="5dp"
+                android:rowCount="2"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/activity_root_shell_clear"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title"
+                    android:text="清空输入"
+                    android:minWidth="78dp"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+                <Button
+                    android:id="@+id/activity_root_shell_enter"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:minWidth="78dp"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title"
+                    android:text="换行"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+                <Button
+                    android:id="@+id/activity_root_shell_run"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="3dp"
+                    android:minWidth="78dp"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title"
+                    android:text="运行命令"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+                <Button
+                    android:id="@+id/activity_root_shell_stop"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="30dp"
+                    android:minWidth="78dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title"
+                    android:text="停止"
+                    android:enabled="false"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+            </GridLayout>
+            <Button
+                android:id="@+id/activity_root_shell_exit"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="退出自定义命令"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <TextView
+                android:id="@+id/shell_statustext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="2dp"
+                android:padding="5dp"
+                android:textColor="@color/font_title"
+                android:hint="这里将会显示命令的运行结果\n\n"
+                android:textColorHint="@color/font_describe"
+                android:gravity="top"
+                android:textSize="12dp"
+                android:background="@color/list_bg" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_subtitle"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="此页面可以左右滑动，左滑到第二页查看历史命令" />
+        </LinearLayout>
+    </moye.sinetoolbox.xtc.view.ReboundScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

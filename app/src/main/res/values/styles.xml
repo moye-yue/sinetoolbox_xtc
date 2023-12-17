@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PageTitle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/font_pagetitle</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">6.0dip</item>
+        <item name="android:paddingEnd">35.0dip</item>
+    </style>
+</resources>

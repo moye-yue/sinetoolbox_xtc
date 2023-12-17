@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-feature android:name="android.hardware.type.watch" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name=".Sinetoolbox"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.SineToolBox"
+        tools:targetApi="25">
+        <activity android:name=".dialog.RootRebootDialogActivity" android:exported="false" android:theme="@style/Base.Theme.SineToolBoxNoSwipe" />
+        <activity android:name=".Activity.root.RootRebootActivity" android:exported="false" />
+        <activity android:name=".dialog.RemoveDialog" android:exported="false" />
+        <activity android:name=".Activity.root.RootShellActivity" android:exported="false" android:theme="@style/Base.Theme.SineToolBoxNoSwipe" />
+        <activity android:name=".dialog.RootRemountTipActivity" android:exported="false" android:theme="@style/Base.Theme.SineToolBoxNoSwipe" />
+        <activity android:name=".Activity.root.RootRemountActivity" android:exported="false" />
+        <activity android:name=".Activity.root.RootDPIActivity" android:exported="false" />
+        <activity android:label="更新日志" android:name=".Activity.about.AboutLogActivity" android:exported="true" />
+        <activity android:label="FTP服务" android:name=".Activity.FTPActivity" android:exported="true" />
+        <activity android:name=".Activity.webview.WebviewActivity" android:theme="@style/Base.Theme.SineToolBoxNoSwipe" android:exported="false" />
+        <activity android:label="网页浏览" android:name=".Activity.webview.WebviewBeforeActivity" android:exported="true" />
+        <activity android:name=".dialog.ErrorDialog" android:exported="false" android:theme="@style/Base.Theme.SineToolBoxNoSwipe" />
+        <activity android:label="自定义Toast" android:name=".Activity.ToastActivity" android:exported="true" />
+        <activity android:label="打开自定义活动" android:name=".Activity.OpenActivity" android:exported="true" />
+        <activity android:label="设备信息" android:name=".Activity.about.DeviceInfoActivity" android:exported="true" />
+        <activity android:label="调试工具箱" android:name=".Activity.DebugActivity" android:exported="true"/>
+        <activity android:name=".Activity.ActivityAddActivity" android:exported="false" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:theme="@style/Base.Theme.SineToolBoxNoSwipe"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

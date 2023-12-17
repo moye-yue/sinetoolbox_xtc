@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".dialog.RootRebootDialogActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blur_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textColor="@color/font_title"
+            android:text="你确定要重启吗"
+            android:textSize="17dp"
+            android:gravity="center"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TableRow android:gravity="center">
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/big_button_red"
+                    android:text="取消"
+                    android:textColor="@color/font_title"
+                    android:onClick="_on_tip_no_click"
+                    tools:ignore="MissingConstraints" />
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/big_button_green"
+                    android:text="重启"
+                    android:textColor="@color/font_title"
+                    android:onClick="_on_tip_yes_click"
+                    tools:ignore="MissingConstraints" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

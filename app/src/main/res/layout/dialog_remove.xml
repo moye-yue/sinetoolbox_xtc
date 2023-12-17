@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".dialog.RemoveDialog">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blur_bg" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TableRow android:gravity="center">
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/big_button_default"
+                    android:text="返回"
+                    android:textColor="@color/font_title"
+                    android:onClick="_on_remove_tip_no_click"
+                    tools:ignore="MissingConstraints" />
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/big_button_red"
+                    android:layout_marginLeft="10dp"
+                    android:text="删除"
+                    android:textColor="@color/font_title"
+                    android:onClick="_on_remove_tip_yes_click"
+                    tools:ignore="MissingConstraints" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

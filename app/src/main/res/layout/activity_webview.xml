@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".Activity.webview.WebviewActivity">
+    <moye.sinetoolbox.xtc.view.DragableLuncher
+        android:id="@+id/webview_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <WebView
+                android:id="@+id/webview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip"
+                tools:ignore="MissingConstraints">
+                <Button
+                    android:id="@+id/activity_webview_apps"
+                    android:layout_width="30dp"
+                    android:layout_height="33dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title"
+                    android:text="+"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+            </RelativeLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <moye.sinetoolbox.xtc.view.ReboundScrollView
+                android:layout_width="match_parent"
+                android:scrollbars="none"
+                android:visibility="visible"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/webview_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="无标题"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:textColor="@color/font_title"
+                        android:gravity="center" />
+                    <EditText
+                        android:id="@+id/webview_url_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:hint="网址"
+                        android:textColor="@color/font_title"
+                        android:padding="5dp"
+                        android:textColorHint="@color/font_describe"
+                        android:gravity="top"
+                        android:textSize="12dp"
+                        android:background="@color/list_bg" />
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:columnCount="2"
+                        android:rowCount="1"
+                        android:layout_marginHorizontal="5dp">
+                        <Button
+                            android:id="@+id/activity_webview_goto"
+                            android:layout_height="40dp"
+                            android:minWidth="78dp"
+                            android:background="@drawable/button_default"
+                            android:textColor="@color/font_title"
+                            android:text="跳转"
+                            android:stateListAnimator="@drawable/anim_button_touch" />
+                        <ToggleButton
+                            android:id="@+id/webview_bookmark_add_btn"
+                            android:layout_height="40dp"
+                            android:minWidth="78dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/toggle_button"
+                            android:textColor="@color/font_title"
+                            android:textOn="已收藏"
+                            android:textOff="未收藏"
+                            android:stateListAnimator="@drawable/anim_button_touch" />
+                    </GridLayout>
+                    <Button
+                        android:id="@+id/activity_webview_refresh"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="刷新"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_webview_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="历史记录"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_webview_bookmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="书签"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_webview_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="返回上一页"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_webview_top"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="回到顶部"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_webview_web"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="回到Webview"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_webview_exit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:textAllCaps="false"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="退出Webview"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                </LinearLayout>
+            </moye.sinetoolbox.xtc.view.ReboundScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include layout="@layout/activity_webview_history" />
+        <include layout="@layout/activity_webview_bookmark" />
+    </moye.sinetoolbox.xtc.view.DragableLuncher>
+</androidx.constraintlayout.widget.ConstraintLayout>

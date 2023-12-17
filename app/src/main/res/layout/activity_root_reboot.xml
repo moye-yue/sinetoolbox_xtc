@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".Activity.root.RootRebootActivity">
+
+    <moye.sinetoolbox.xtc.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/activity_root_btn_cont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" >
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="-8dp"
+                    android:src="@drawable/item_decorate"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:text="@string/activity_root_reboot_title"
+                    style="@style/PageTitle" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/activity_root_reboot_rec"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="重启到Recovery"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_root_reboot_edl"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="重启到9008"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_root_reboot_bl"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="重启到bootloader\n（用于伪砖）"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+        </LinearLayout>
+    </moye.sinetoolbox.xtc.view.ReboundScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

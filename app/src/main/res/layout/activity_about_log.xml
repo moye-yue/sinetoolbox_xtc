@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".Activity.about.AboutLogActivity">
+
+    <moye.sinetoolbox.xtc.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" >
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="-8dp"
+                    android:src="@drawable/item_decorate"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:text="@string/update_log"
+                    style="@style/PageTitle" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_3_7_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_3_7"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_3_6_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_3_6"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_3_5_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_3_5"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_3_4_1_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_3_4_1"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_3_4_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_3_4"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_3_3_1_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_3_3_1"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_3_3_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_3_3"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_3_2_1_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_3_2_1"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_3_2_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_3_2"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_3_1_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_3_1"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_3_0_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_3_0"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_2_5_1_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_2_5_1"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_2_5_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_2_5"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_2_4_2_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_2_4_2"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_2_4_1_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_2_4_1"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_2_4_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_2_4"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_2_3_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_2_3"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_2_2_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_2_2"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_2_1_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_2_1"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_2_0_1_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_2_0_1"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_2_0_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_2_0"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_1_8_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_1_8"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_1_7_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_1_7"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_1_6_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_1_6"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_1_5_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_1_5"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_1_4_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_1_4"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_1_3_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_1_3"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_1_2re1_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_1_2re1"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_1_2_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_1_2"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_1_1_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_1_1"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:text="@string/update_log_1_0re1_title"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/font_describe"
+                android:text="@string/update_log_1_0re1"
+                android:gravity="center" />
+        </LinearLayout>
+    </moye.sinetoolbox.xtc.view.ReboundScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

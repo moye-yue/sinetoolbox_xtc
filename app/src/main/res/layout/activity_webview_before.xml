@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".Activity.webview.WebviewBeforeActivity">
+
+    <moye.sinetoolbox.xtc.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" >
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="-8dp"
+                    android:src="@drawable/item_decorate"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:text="@string/webview_title"
+                    style="@style/PageTitle" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:layout_marginLeft="10dp"
+                android:text="网址" />
+            <EditText
+                android:id="@+id/webview_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:maxLines="1"
+                android:hint="在此输入网址"
+                android:text="https://bing.com"
+                android:textColor="@color/font_title"
+                android:padding="5dp"
+                android:textColorHint="@color/font_describe"
+                android:gravity="top"
+                android:textSize="12dp"
+                android:background="@color/list_bg" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/activity_webview_before_bing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title"
+                    android:text="必应"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+                <Button
+                    android:id="@+id/activity_webview_before_baidu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title"
+                    android:text="百度"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/activity_webview_before_go"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:textAllCaps="false"
+                android:drawableEnd="@drawable/btn_right"
+                android:text="Webview，启动！"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_describe"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="打开页面后点击左上角的“+”按钮查看菜单。此功能调用系统Webview，个别机型可能无法使用" />
+        </LinearLayout>
+    </moye.sinetoolbox.xtc.view.ReboundScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

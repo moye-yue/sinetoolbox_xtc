@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".Activity.FTPActivity">
+
+    <moye.sinetoolbox.xtc.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" >
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="-8dp"
+                    android:src="@drawable/item_decorate"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:text="@string/ftp_title"
+                    style="@style/PageTitle" />
+            </RelativeLayout>
+            <ToggleButton
+                android:id="@+id/ftp_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:drawableEnd="@drawable/multiple_button_image"
+                android:textColor="@color/font_title"
+                android:textOn="FTP服务：已开启"
+                android:textOff="FTP服务：已关闭"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <TextView
+                android:id="@+id/ftp_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_describe"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:layout_marginLeft="10dp"
+                android:text="FTP用户名" />
+            <EditText
+                android:id="@+id/ftp_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:maxLines="1"
+                android:maxLength="8"
+                android:hint="在此输入用户名"
+                android:text="user"
+                android:textColor="@color/font_title"
+                android:padding="5dp"
+                android:textColorHint="@color/font_describe"
+                android:gravity="top"
+                android:textSize="12dp"
+                android:background="@color/list_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                android:text="FTP密码" />
+            <EditText
+                android:id="@+id/ftp_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:maxLines="1"
+                android:maxLength="14"
+                android:hint="FTP密码默认为空"
+                android:text=""
+                android:textColor="@color/font_title"
+                android:padding="5dp"
+                android:textColorHint="@color/font_describe"
+                android:gravity="top"
+                android:textSize="12dp"
+                android:background="@color/list_bg" />
+        </LinearLayout>
+    </moye.sinetoolbox.xtc.view.ReboundScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

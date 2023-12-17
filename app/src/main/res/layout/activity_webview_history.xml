@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".Activity.webview.WebviewActivity">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40.0dip" >
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="-8dp"
+                android:src="@drawable/item_decorate"
+                android:layout_alignParentEnd="true" />
+            <TextView
+                android:text="历史浏览"
+                android:layout_marginTop="5dp"
+                style="@style/PageTitle" />
+        </RelativeLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:columnCount="2"
+            android:layout_marginBottom="4dp"
+            android:rowCount="1"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/activity_webview_history_back"
+                android:layout_height="30dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="返回"
+                android:minWidth="78dp"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_webview_history_clear"
+                android:layout_height="30dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="清空"
+                android:layout_marginLeft="5dp"
+                android:minWidth="78dp"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+        </GridLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="5dp"
+                android:id="@+id/webview_history_list">
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

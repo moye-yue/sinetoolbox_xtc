@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".Activity.ToastActivity">
+
+    <moye.sinetoolbox.xtc.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" >
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="-8dp"
+                    android:src="@drawable/item_decorate"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:text="@string/open_title"
+                    style="@style/PageTitle" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:layout_marginLeft="10dp"
+                android:text="应用包名" />
+            <EditText
+                android:id="@+id/activity_open_packagename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:maxLines="1"
+                android:hint="类似于com.xx.xx"
+                android:text=""
+                android:textColor="@color/font_title"
+                android:padding="5dp"
+                android:textColorHint="@color/font_describe"
+                android:textSize="12dp"
+                android:background="@color/list_bg" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/font_title"
+                android:layout_marginLeft="10dp"
+                android:text="活动名" />
+            <EditText
+                android:id="@+id/activity_open_activityname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:maxLines="1"
+                android:hint="类似于com.xx.xx.xx.xx"
+                android:text=""
+                android:textColor="@color/font_title"
+                android:padding="5dp"
+                android:textColorHint="@color/font_describe"
+                android:textSize="12dp"
+                android:background="@color/list_bg" />
+            <ToggleButton
+                android:id="@+id/activity_open_rootuse"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_default"
+                android:drawableEnd="@drawable/multiple_button_image"
+                android:textColor="@color/font_title"
+                android:textOn="使用ROOT"
+                android:textOff="使用ROOT"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_open_openbtn"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:textAllCaps="false"
+                android:text="打开"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+        </LinearLayout>
+    </moye.sinetoolbox.xtc.view.ReboundScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

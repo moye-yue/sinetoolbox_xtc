@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="background_images">
+        <item>你是做什么工作的</item>
+        <item>天空岛</item>
+        <item>原神，启动</item>
+        <item>葡萄酒</item>
+        <item>星穹列车</item>
+        <item>正弦工具箱</item>
+        <item>对话框</item>
+        <item>正弦加载中</item>
+    </array>
+
+    <array name="activity_packages">
+        <item>com.xtc.setting</item>
+        <item>com.xtc.selftest</item>
+        <item>com.baidu.input.xtcime</item>
+        <item>com.xtc.selftest</item>
+        <item>com.xtc.selftest</item>
+        <item>com.xtc.selftest</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.i3launcher</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.datacenter</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.setting</item>
+        <item>com.xtc.setting</item>
+    </array>
+    <array name="activity_uris">
+        <item>com.xtc.setting.module.dial.activity.DialActivity</item>
+        <item>com.xtc.selftest.MainActivity</item>
+        <item>com.baidu.input.xtcime.demo.SettingActivity</item>
+        <item>com.xtc.selftest.ui.DebugActivity</item>
+        <item>com.xtc.selftest.ui.ControllerActivity</item>
+        <item>com.xtc.selftest.ui.NetworkSettingsActivity</item>
+        <item>com.xtc.setting.module.dev.activity.DevMainActivity</item>
+        <item>com.xtc.setting.module.wifi.view.WifiSaveActivity</item>
+        <item>com.xtc.setting.module.secretcode.view.activity.WebBrowserActivity</item>
+        <item>com.xtc.setting.module.bootstart.WatchBootStart</item>
+        <item>com.xtc.setting.module.ring.view.VolumeAdjustActivity</item>
+        <item>com.xtc.setting.module.display.view.BrightnessAdjustTestActivity</item>
+        <item>com.xtc.i3launcher.duration.view.DurationListActivity</item>
+        <item>com.xtc.setting.module.mgr.AppMgrActivity</item>
+        <item>com.xtc.setting.module.secretcode.view.activity.LoopPictureActivity</item>
+        <item>com.xtc.setting.module.authoritymanage.view.NotificationAccessActivity</item>
+        <item>com.xtc.location.module.view.LocationPathActivity</item>
+        <item>com.xtc.setting.module.lockscreen.view.SetPasswordActivity</item>
+        <item>com.xtc.setting.module.password.view.PasswordMainActivity</item>
+        <item>com.xtc.setting.module.secretcode.view.activity.LanguageActivity</item>
+        <item>com.xtc.setting.module.secretcode.view.activity.OfflineOtaActivity</item>
+    </array>
+    <array name="activity_names">
+        <item>拨号盘</item>
+        <item>自检</item>
+        <item>切换输入法</item>
+        <item>ADB开关</item>
+        <item>高级设置</item>
+        <item>网络设置</item>
+        <item>开发者选项</item>
+        <item>已存储的网络</item>
+        <item>浏览器测试</item>
+        <item>开机自启</item>
+        <item>音量调节</item>
+        <item>亮度数值调节</item>
+        <item>应用开启次数</item>
+        <item>应用详情</item>
+        <item>终端演示模式</item>
+        <item>“勿扰”权限</item>
+        <item>行动轨迹</item>
+        <item>修改锁屏密码</item>
+        <item>传统密码管理</item>
+        <item>语言环境切换</item>
+        <item>离线升级</item>
+    </array>
+</resources>

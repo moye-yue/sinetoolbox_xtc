@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".Activity.MainActivity">
+    <ImageView
+        android:id="@+id/activity_main_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+    <moye.sinetoolbox.xtc.view.DragableLuncher
+        android:id="@+id/main_launcher"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="MissingConstraints">
+        <moye.sinetoolbox.xtc.view.ReboundScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"/>
+        <moye.sinetoolbox.xtc.view.ReboundScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:background="#36000000"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/activity_main_title_cont"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40.0dip" >
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="-8dp"
+                        android:src="@drawable/item_decorate"
+                        android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:text="@string/app_name"
+                        style="@style/PageTitle" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_describe"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-9dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="    右滑退出软件，左右滑动查看更多功能" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_title"
+                    android:gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:text="基础功能" />
+                <Button
+                    android:id="@+id/activity_main_webview_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title"
+                    android:drawableEnd="@drawable/btn_right"
+                    android:text="网页浏览"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+                <Button
+                    android:id="@+id/activity_main_ftp_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title"
+                    android:drawableEnd="@drawable/btn_right"
+                    android:text="FTP服务"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_title"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="无用功能" />
+                <Button
+                    android:id="@+id/activity_main_toast_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title"
+                    android:drawableEnd="@drawable/btn_right"
+                    android:text="自定义Toast"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_title"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="打开活动" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_subtitle"
+                    android:gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:text="部分活动需要ROOT或者新版的系统应用才能打开" />
+                <Button
+                    android:id="@+id/activity_main_open_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title"
+                    android:drawableEnd="@drawable/btn_right"
+                    android:text="打开自定义活动"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+                <LinearLayout
+                    android:id="@+id/activity_main_activity_btn_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_describe"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="无法保证所有机型都可以打开这些活动" />
+            </LinearLayout>
+        </moye.sinetoolbox.xtc.view.ReboundScrollView>
+        <moye.sinetoolbox.xtc.view.ReboundScrollView
+            android:id="@+id/main_root_page"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:background="#36000000"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40.0dip" >
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="-8dp"
+                        android:src="@drawable/item_decorate"
+                        android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:text="@string/activity_root_title"
+                        style="@style/PageTitle" />
+                </RelativeLayout>
+                <LinearLayout
+                    android:id="@+id/root_main_noroot"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="无法调用ROOT"
+                        android:paddingTop="0dp"
+                        android:paddingStart="0dp"
+                        android:paddingEnd="0dp"
+                        style="@style/PageTitle" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:text="请确保您拥有且已经授予了ROOT权限"
+                        android:textColor="@color/font_describe" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/root_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font_describe"
+                        android:layout_marginTop="-4dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="   进行ROOT操作的过程中程序需要等待ROOT权限的授权，卡死为正常现象。" />
+                    <Button
+                        android:id="@+id/activity_main_root_shell"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:textAllCaps="false"
+                        android:drawableEnd="@drawable/btn_right"
+                        android:text="自定义Shell命令"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_main_root_dpi"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:drawableEnd="@drawable/btn_right"
+                        android:text="切换DPI"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_main_root_reboot"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:drawableEnd="@drawable/btn_right"
+                        android:text="重启选项"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_main_root_mount"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:drawableEnd="@drawable/btn_right"
+                        android:text="挂载分区"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font_title"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:text="切换开关" />
+                    <ToggleButton
+                        android:id="@+id/selinux_togglebutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/toggle_button"
+                        android:textColor="@color/font_title"
+                        android:textAllCaps="false"
+                        android:textOff="SELinux：强制模式"
+                        android:textOn="SELinux：宽容模式"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font_title"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:text="一键功能" />
+                    <Button
+                        android:id="@+id/activity_main_root_wifiadb"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="一键开启WifiADB"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <TextView
+                        android:id="@+id/wifi_adb_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font_describe"
+                        android:gravity="center"
+                        android:textSize="11dp"
+                        android:layout_marginBottom="3dp"
+                        android:text="" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font_title"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:text="小天才相关" />
+                    <Button
+                        android:id="@+id/activity_main_root_appupdate_disable"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="冻结小天才应用中心"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_main_root_appupdate_enable"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="解冻小天才应用中心"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_main_root_systemupdatei11_disable"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="冻结小天才系统更新"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_main_root_systemupdatei11_enable"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="解冻小天才系统更新"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font_title"
+                        android:layout_marginTop="12dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="3dp"
+                        android:text="屏幕自动旋转" />
+                    <Button
+                        android:id="@+id/activity_main_root_trun_on"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="开启屏幕自动旋转"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <Button
+                        android:id="@+id/activity_main_root_trun_off"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/button_default"
+                        android:textColor="@color/font_title"
+                        android:text="关闭屏幕自动旋转"
+                        android:stateListAnimator="@drawable/anim_button_touch" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/font_describe"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:text="个别系统需要修补运行库才能开启屏幕自动旋转" />
+                </LinearLayout>
+            </LinearLayout>
+        </moye.sinetoolbox.xtc.view.ReboundScrollView>
+        <moye.sinetoolbox.xtc.view.ReboundScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:background="#36000000"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40.0dip" >
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="-8dp"
+                        android:src="@drawable/item_decorate"
+                        android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:text="@string/activity_setting_title"
+                        style="@style/PageTitle" />
+                </RelativeLayout>
+                <ToggleButton
+                    android:id="@+id/activity_main_setting_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:textOff="启用ROOT功能"
+                    android:textOn="启用ROOT功能"
+                    android:background="@drawable/button_default"
+                    android:drawableEnd="@drawable/multiple_button_image"
+                    android:textColor="@color/font_title" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_describe"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="切换开关会重载当前活动" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_title"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:text="页面背景" />
+                <RadioGroup
+                    android:id="@+id/activity_main_setting_bg_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_describe"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="切换页面背景会重载当前活动" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_title"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="3dp"
+                    android:text="活动列表管理" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/font_describe"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:text="点击删除" />
+                <Button
+                    android:id="@+id/activity_main_setting_reset_activity_add_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="增加活动"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title" />
+                <Button
+                    android:id="@+id/activity_main_setting_reset_activity_list_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="重置活动列表"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title" />
+                <Button
+                    android:id="@+id/activity_main_setting_refresh_activity_list_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:text="刷新活动列表"
+                    android:background="@drawable/button_default"
+                    android:textColor="@color/font_title" />
+                <LinearLayout
+                    android:id="@+id/activity_main_setting_activity_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="vertical">
+                </LinearLayout>
+            </LinearLayout>
+        </moye.sinetoolbox.xtc.view.ReboundScrollView>
+        <moye.sinetoolbox.xtc.view.ReboundScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:background="#36000000"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40.0dip" >
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_marginTop="-8dp"
+                        android:src="@drawable/item_decorate"
+                        android:layout_alignParentEnd="true" />
+                    <TextView
+                        android:text="@string/about_app"
+                        style="@style/PageTitle" />
+                </RelativeLayout>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:stateListAnimator="@drawable/anim_button_touch"
+                    android:onClick="_on_version_text_click"
+                    android:src="@drawable/toolbox_logo" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="-6dp"
+                    android:textColor="@color/font_describe"
+                    android:text="@string/app_name"
+                    android:stateListAnimator="@drawable/anim_button_touch"
+                    android:onClick="_on_version_text_click"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="-8dp"
+                    android:textColor="@color/font_subtitle"
+                    android:layout_marginBottom="32dp"
+                    android:onClick="_on_version_text_click"
+                    android:stateListAnimator="@drawable/anim_button_touch"
+                    android:text="@string/app_version"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:layout_marginTop="-8dp"
+                    android:textColor="@color/font_error"
+                    android:layout_marginBottom="32dp"
+                    android:onClick="_on_version_text_click"
+                    android:stateListAnimator="@drawable/anim_button_touch"
+                    android:text="开源地址：https://github.com/ipmoye/sinetoolbox_xtc"
+                    android:gravity="center" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textColor="@color/font_title"
+                    android:text="原版开发者"
+                    android:gravity="center" />
+                <TextView
+                    android:id="@+id/activity_main_about_developer"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="-5dp"
+                    android:textColor="@color/font_describe"
+                    android:text="@string/app_developer"
+                    android:gravity="center" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@drawable/button_default"
+                    android:drawableEnd="@drawable/btn_right"
+                    android:textColor="@color/font_title"
+                    android:text="更新日志"
+                    android:onClick="_on_updatelog_click"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_default"
+                    android:drawableEnd="@drawable/btn_right"
+                    android:textColor="@color/font_title"
+                    android:text="设备信息"
+                    android:onClick="_on_device_click"
+                    android:stateListAnimator="@drawable/anim_button_touch" />
+            </LinearLayout>
+        </moye.sinetoolbox.xtc.view.ReboundScrollView>
+    </moye.sinetoolbox.xtc.view.DragableLuncher>
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40.0dip"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/main_launcher_status"
+            android:layout_width="wrap_content"
+            android:layout_height="7dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="-14dp"
+            android:src="@drawable/frame_1in4" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

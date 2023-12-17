@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".Activity.DebugActivity">
+
+    <moye.sinetoolbox.xtc.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" >
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="-8dp"
+                    android:src="@drawable/item_decorate"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:text="@string/debug_title"
+                    style="@style/PageTitle" />
+            </RelativeLayout>
+            <ToggleButton
+                android:id="@+id/activity_debug_fakeroot"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:drawableEnd="@drawable/multiple_button_image"
+                android:textColor="@color/font_title"
+                android:textOn="伪装ROOT：开"
+                android:textOff="伪装ROOT：关"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:text="假装系统有ROOT"
+                android:gravity="center"
+                android:textColor="@color/font_describe" />
+            <Button
+                android:id="@+id/activity_debug_clearactivities"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="清空活动列表"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+        </LinearLayout>
+    </moye.sinetoolbox.xtc.view.ReboundScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

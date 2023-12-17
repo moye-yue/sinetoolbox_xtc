@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_bg"
+    tools:context=".Activity.root.RootDPIActivity">
+
+    <moye.sinetoolbox.xtc.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="40.0dip" >
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="-8dp"
+                    android:src="@drawable/item_decorate"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:text="@string/activity_root_dpi_title"
+                    style="@style/PageTitle" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/activity_root_dpi_reset"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="复原DPI"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_root_dpi_300"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="切换DPI为300"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_root_dpi_280"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="切换DPI为280"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_root_dpi_260"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="切换DPI为260"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_root_dpi_240"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="切换DPI为240"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_root_dpi_200"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="切换DPI为200"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_root_dpi_160"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="切换DPI为160"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_root_dpi_140"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="切换DPI为140"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_root_dpi_120"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="切换DPI为120"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <Button
+                android:id="@+id/activity_root_dpi_100"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="切换DPI为100"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textColor="@color/font_title"
+                android:layout_marginTop="10dp"
+                android:text="自定义DPI"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/font_describe"
+                android:layout_marginTop="10dp"
+                android:text="输入的DPI需要大于40且小于500"
+                android:gravity="center" />
+            <EditText
+                android:id="@+id/dpiInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="3"
+                android:inputType="number"
+                android:textColor="@color/font_subtitle"
+                android:background="@color/list_bg"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:text="320" />
+            <Button
+                android:id="@+id/activity_root_dpi_diy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="-4dp"
+                android:background="@drawable/button_default"
+                android:textColor="@color/font_title"
+                android:text="使用自定义DPI"
+                android:stateListAnimator="@drawable/anim_button_touch" />
+        </LinearLayout>
+    </moye.sinetoolbox.xtc.view.ReboundScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
